@@ -58,6 +58,24 @@ export default class Home extends React.Component {
           centerComponent={{ text: 'Home', style: { color: '#fff' } }}
           outerContainerStyles={mainStyles.darkBackground}
         />
+        <Button
+          icon={{ name: 'login', type: 'entypo' }}
+          title="Team"
+          onPress={() => {this.props.navigation.push('Team')}}
+          buttonStyle={{ alignSelf: 'center' }}
+        />
+        <Button
+          icon={{ name: 'login', type: 'entypo' }}
+          title="Recent Runs"
+          onPress={() => {this.props.navigation.push('RecentRuns')}}
+          buttonStyle={{ alignSelf: 'center' }}
+        />
+        <Button
+          icon={{ name: 'login', type: 'entypo' }}
+          title="Add Run"
+          onPress={() => {this.props.navigation.push('AddRun')}}
+          buttonStyle={{ alignSelf: 'center' }}
+        />
   </View>
     );
   }
